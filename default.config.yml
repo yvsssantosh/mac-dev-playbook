@@ -6,16 +6,26 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
-dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+configure_dock: true
+dockitems_remove:
+- Launchpad
+- TV
+- 'App Store'
+- Contacts
+- Maps
+dockitems_persist:
+- name: "Mail"
+  path: "/Applications/Mail.app/"
+  pos: 1
+- name: "Calendar"
+  path: "/Applications/Calendar.app/"
+  pos: 2
+- name: "Podcasts"
+  path: "/Applications/Podcasts.app/"
+  pos: 3
+- name: "Safari"
+  path: "/Applications/Safari.app/"
+  pos: 4
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -24,44 +34,35 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/yvsssantosh/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Projects/yvsssantosh/dotfiles
 dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
+  # Files
   - .osx
   - .vimrc
+  - .zshrc
+  # Directories
+  - .zsh
+  - .warp
+  - .config
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - github/gh/gh
-  - go
+  # Required packages
+  - direnv
+  - exa
+  - fzf
+  - flutter
+  - goto
   - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
-  - pv
-  - wget
-  - wrk
-  - zsh-history-substring-search
+  - pyenv
+  - helix
+  # Optional packages
+  # - go
+  # - node
+  # - nvm
+  - azure-cli
 
 homebrew_taps:
   - homebrew/core
@@ -69,17 +70,30 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  # Required
+  - 1password
+  - android-studio
+  - brave-browser
   - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
+  - gitkraken
+  - istat-menus
+  - notion
+  - numbers
+  - popsql
+  - postman
   - slack
-  - sublime-text
-  - transmit
+  - spotify
+  - the-unarchiver
+  - tor-browser
+  - visual-studio-code
+  - vlc
+  - warp
+  - whatsapp
+  - xcode
+
+  # Optional
+  # - zoom
+  # - google-cloud-sdk
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/geerlingguy/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+<img src="https://raw.githubusercontent.com/yvsssantosh/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
 
 # Mac Development Ansible Playbook
 
@@ -138,7 +138,7 @@ Packages (installed with Homebrew):
   - wrk
   - zsh-history-substring-search
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+My [dotfiles](https://github.com/yvsssantosh/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
@@ -165,5 +165,5 @@ Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches
 
 This project was created by [Jeff Geerling](https://www.jeffgeerling.com/) (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
 
-[badge-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/workflows/CI/badge.svg?event=push
-[link-gh-actions]: https://github.com/geerlingguy/mac-dev-playbook/actions?query=workflow%3ACI
+[badge-gh-actions]: https://github.com/yvsssantosh/mac-dev-playbook/workflows/CI/badge.svg?event=push
+[link-gh-actions]: https://github.com/yvsssantosh/mac-dev-playbook/actions?query=workflow%3ACI
